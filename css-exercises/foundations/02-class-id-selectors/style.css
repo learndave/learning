@@ -1,0 +1,19 @@
+.one, .three, .five {
+    background-color: pink;
+    font-family: "Verdana", "DejaVu Sans", 'sans-serif';
+}
+
+#two {
+    color: blue;
+    font-size: 32px;
+}
+
+.three {
+    font-size: 24px;
+}
+
+#four {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}

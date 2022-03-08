@@ -1,0 +1,24 @@
+.container {
+  background: dodgerblue;
+  border: 4px solid midnightblue;
+  width: 400px;
+  height: 300px; 
+  /* 
+  flex display: gives the container
+        the ability to alter the height and width of its items
+  align-items: vertical alignment
+  justify-content: horizontal alignment
+  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background: palevioletred;
+  font-weight: bold;
+  text-align: center;
+  border: 6px solid maroon;
+  width: 80px;
+  height: 80px;
+}
