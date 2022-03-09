@@ -16,7 +16,7 @@ const person = (name, age) => {
 
 const cabs = person("cabs", 21);
 
-cabs.greet();
+// cabs.greet();
 
 // -------------------------
 // -------------------------
@@ -31,4 +31,21 @@ const func = x => {
 
 func(99);
 
-console.log(a)
+// console.log(a)
+
+// -------------------------
+// -------------------------
+// -------------------------
+// CLOSURES
+
+var sayHello = function (name) {
+    var text = 'Hello, ' + name;
+    return function () {
+        console.log(text);
+    };
+};
+
+let greetCabs = sayHello("cabs");
+
+greetCabs();
+sayHello("cabs2")();
