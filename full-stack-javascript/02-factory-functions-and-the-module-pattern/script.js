@@ -133,3 +133,12 @@ let adultCabs = Adult("cabs", 27);
 
 adultCabs.sayAge();
 adultCabs.beAdult();
+
+// -------------------------
+// -------------------------
+// -------------------------
+// IIFE - Immediately Invoked Function Expressions
+
+(function() {
+    // expression here;
+})();
