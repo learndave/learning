@@ -1,6 +1,8 @@
 import _ from 'lodash';
 import "./style.css";
 import Icon from './icon.png';
+import TVShows from "./tv_shows.csv";
+import Note from "./tv_shows.xml";
 
  function component() {
   const element = document.createElement('div');
@@ -15,6 +17,9 @@ import Icon from './icon.png';
   const myIcon = new Image();
   myIcon.src = Icon;
   element.appendChild(myIcon);
+
+  console.log(TVShows);
+  console.log(Note);
 
   return element;
 }
