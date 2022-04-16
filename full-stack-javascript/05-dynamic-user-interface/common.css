@@ -11,6 +11,7 @@ a {
     color: inherit;
 }
 
+/* DISABLE SELECT */
 * {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
