@@ -56,6 +56,21 @@ ul {
     font-weight: 700;
 }
 
+.home {
+    position: absolute;
+    left: 30px;
+}
+
+.home:hover {
+    transform: scale(110%);
+    transition: transform 100ms;
+}
+
+.home-icon {
+    width: 25px;
+    height: 25px;
+}
+
 .card {
     background-color: white;
     color: var(--color-dark);

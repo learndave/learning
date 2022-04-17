@@ -1,0 +1,53 @@
+/* DESIGN */
+
+.main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.drop-down-header-title,
+.drop-down-item {
+    padding: 7px 20px;
+}
+
+.drop-down-header,
+.drop-down-list {
+    border-radius: 10px;
+    border: solid 1px var(--color-dark);
+}
+
+.drop-down-item {
+    border-radius: 10px;
+}
+
+.drop-down-item {
+    text-align: left;
+}
+
+.drop-down-header:hover,
+.drop-down-item:hover {
+    background-color: var(--color-lightest);
+}
+
+
+
+/* FUNCTIONALITY */
+
+.drop-down-list {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.drop-down-list {
+    position: absolute;
+}
+
+
+/* * {
+    outline: dotted 1px lightblue;
+} */
