@@ -9,41 +9,57 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Rating state start -->
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <div class="rating-start">
+      <div class="star-container">
+        <img src="images/icon-star.svg" class="star-icon">
+      </div>
+      <div class="card-title">
+        How did we do?
+      </div>
+      <div class="card-message">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </div>
+      <ul class="rating">
+        <li class="rating-value unselectable">1</li>
+        <li class="rating-value unselectable">2</li>
+        <li class="rating-value unselectable">3</li>
+        <li class="rating-value unselectable">4</li>
+        <li class="rating-value unselectable clicked">5</li>
+      </ul>
+      <div class="submit-button unselectable">
+        SUBMIT
+      </div>
+    </div>
+    <div class="rating-end">
+      <div class="thank-you-image-container">
+        <img src="images/illustration-thank-you.svg" class="thank-you-image-icon">
+      </div>
+      <div class="rating-message">
+        You selected <span class="rating-actual"></span> out of 5
+      </div>
+      <div class="card-title">
+        Thank you!
+      </div>
+      <div class="card-message">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </div>
+    </div>
   </div>
+  <!-- <div class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Francis Dave Cabanting</a>.
+    </div>
+  </div> -->
+  <script src="index.js"></script>
 </body>
 </html>

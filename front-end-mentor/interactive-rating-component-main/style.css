@@ -1,0 +1,161 @@
+body {
+    background-color: #141519;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    background-image: radial-gradient(#222830, #14181f);
+    /* background-attachment: fixed; */
+    background-position: -165px -330px;
+    background-size: 660px 660px;
+    width: 330px;
+    max-width: 330px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.card > * {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-title {
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-message {
+    color: #848c94;
+}
+
+.rating-end {
+    display: none;
+}
+
+.star-container,
+.rating-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #262F38;
+}
+
+.star-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.rating-value {
+    font-size: 18px;
+
+    width: 55px;
+    height: 55px;
+    border-radius: 28px;
+    color: #848c94;
+    
+    font-weight: 800;
+
+    transition: 300ms;
+}
+
+
+.rating-value:hover {
+    background-color: #848c94;
+    color: white;
+
+    transition: 300ms;
+}
+
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FC7613;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+
+    font-weight: 800;
+
+    transition: 300ms;
+}
+
+.submit-button:hover {
+    background-color: white;
+    color: #FC7613;
+
+    transition: 300ms;
+}
+
+.rating-value.clicked {
+    color: white;
+    background-color: #FC7613;
+
+    transition: 300ms;
+}
+
+
+/* * {
+    outline: dotted 1px lightblue;
+} */
+
+.rating-end * {
+    text-align: center;
+}
+
+.card-message {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.rating-message {
+    color: #FC7613;
+    background-color: #262F38;
+    width: max-content;
+    padding: 7px 20px;
+    border-radius: 15px;
+    align-self: center;
+    font-size: 12px;
+}
