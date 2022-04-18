@@ -13,20 +13,28 @@
     <link rel="stylesheet" href="src/css/default-form.css">
 </head>
 <body>
-    <form class="main-card form-container">
+    <form class="main-card form-container" novalidate>
         <h2 class="form-title">Create your account</h2>
         <ul>
           <li>
+            <input class='username' type="text" name="username" id="username" placeholder=" ">
             <label for="username">Username</label>
-            <input class='username' type="text" name="username" id="username">
           </li>
           <li>
+            <input type="email" class='email' name="email" id='email' placeholder=" ">
             <label for="email">Email</label>
-            <input type="email" class='email' minlength="10" name="email" id="email">
           </li>
           <li>
-            <label for="phone">Phone</label>
-            <input class='phone' type="tel" name="phone" id="phone">
+            <input type="password" class='password' name="password" id='password' placeholder=" ">
+            <label for="password">Password</label>
+          </li>
+          <li>
+            <input type="text" class='country' name="country" id="country" placeholder=" ">
+            <label for="country">Country</label>
+          </li>
+          <li>
+            <input type="text" class='zipcode' name="zipcode" id="zipcode" placeholder=" ">
+            <label for="zipcode">Zipcode</label>
           </li>
           <li>
             <button type="submit" class="submit">Create Account</button>
