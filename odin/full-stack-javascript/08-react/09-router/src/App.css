@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(64, 70, 81);
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.nothing {
+  margin-top: 20px;
+}
+
+.invoice-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.invoice-name {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.invoice-details-table {
+  width:fit-content;
+  text-align: left;
+}
+
+.invoice-details-table td {
+  padding: 4px 10px;
+}
+
+.bold {
+  font-weight: 700;
+}
