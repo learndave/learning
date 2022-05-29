@@ -41,4 +41,10 @@ const getInvoice = (searchNumber) => {
     )
 }
 
-export {getInvoice, getInvoices};
+const deleteInvoice = (toDeleteNumber) => {
+    invoices = invoices.filter(
+        (invoice) => invoice.number !== toDeleteNumber
+    );
+};
+
+export {getInvoice, getInvoices, deleteInvoice};

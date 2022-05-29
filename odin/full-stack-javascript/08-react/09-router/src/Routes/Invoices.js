@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import {getInvoices} from "../Data/Data";
 
 const Invoices = () => {
@@ -8,13 +8,20 @@ const Invoices = () => {
         <div className="category">
             <h2>Invoices</h2>
             {invoices.map((invoice) => (
-                <Link 
+                <NavLink
+                    style={({isActive}) => {
+                        return {
+                            display: "block",
+                            margin: "1rem 0",
+                            fontWeight: isActive ? "800" : "",
+                        }
+                    }}
                     className="invoice-item"
                     to={`/invoices/${invoice.number}`}
                     key={invoice.number}
                 >
                     {invoice.name}
-                </Link>
+                </NavLink>
             ))}
             <Outlet />
         </div>
